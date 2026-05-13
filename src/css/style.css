@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family: 'Poppins', sans-serif;
+    --primary-azure: #3a86ff;
+    --light-blue: #e3f4fa;
+    --span-blue: #cce4fc;
+    --brand-gradient: linear-gradient(90deg, #5de0e6 0%, #004aad 100%);      
+    --dark-azure: #1d3557;         
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.nav-menu ul {
+    display: flex;       
+    list-style: none;   
+    gap: 20px;           
+    margin: 0 200px 0 0;
+    padding: 0;
+}
+.nav-menu a:hover {
+    color: var(--primary-azure); 
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    background: var(--brand-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 200px;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-light);
+    background-color: var(--light-blue);
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+h1, h2, h3 {
+    font-weight: 700; 
+    color: var(--primary-blue);
+}
+
+p {
+    font-weight: 400; 
+    line-height: 1.6;
+}
+
+.ia{
+    display: flex;
+    background-color: var(--span-blue);
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-azure);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+                         /* Estilos para a seção hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 120px;
+    color: var(--dark-azure);
+}
+
+.hero button {
+    background: var(--brand-gradient);
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 74, 173, 0.3);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+
+.hero button a{
+    font-family: var(--font-family);
+    font-weight: 600;
+    color: white;
+}
+
+.glow-sphere {
+    position: absolute;
+    top: 50px;          
+    right: -150px;      
+    width: 400px;
+    height: 400px;
+    background: var(--brand-gradient); 
+    border-radius: 50%;
+    filter: blur(100px); 
+    opacity: 0.4;
+    z-index: -1;         
+}
+.social-proof {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    color: #555;
+    margin-top: 100px;
+}
+
+.avatars {
+    display: flex;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;       
+    border: 2px solid white;   
+    margin-left: -10px;        
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+}
+
+.avatars .avatar:first-child {
+    margin-left: 0;            
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+.features-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Isso força os filhos a irem para a esquerda */
+    width: 100%;            
+    max-width: 1000px;       
+    margin-bottom: 40px;
+    text-align: left;        /* Alinhamento do texto */
+}
+
+
+
+.features-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 20px; Adiciona um pouco de padding para evitar que os cards encostem nas bordas
+}
+
+.features-header h1{
+    text-align: left;
+    color: var(--dark-azure);
+}
+
+
+.feature-card{
+    background: white;        
+    padding: 25px;
+    border-radius: 15px;      
+    flex: 1;                  
+    text-align: center;        
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); 
+    transform: translateY(-5px); 
+    transition: ease;
+
+}
+
+
+
+.feature-card h3{
+    color: var(--primary-azure);
+}
