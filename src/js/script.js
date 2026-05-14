@@ -1,3 +1,10 @@
+function botaoComecar(elementoBotao) {
+  elementoBotao.innerText = "Processando..."
+  console.log("Botão Clicado")
+  console.log("Redirecionando usuário para página de Login")
+  window.location.href = "/src/login/login.html"
+}
+
 // Array com os usuários (banco simples)
     const usuarios = [
       { usuario: "admin", senha: "123" },
